@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Star Sprinter, a fast arcade browser game by Chelaka Fernando."
+    />
+    <meta name="theme-color" content="#101820" />
+    <title>Star Sprinter | Chelaka Fernando</title>
+    <link rel="stylesheet" href="styles.css?v=0b0d9e9" />
+  </head>
+  <body>
+    <main class="game-shell" aria-labelledby="game-title">
+      <section class="hud-panel" aria-label="Game controls and score">
+        <div class="brand-lockup">
+          <span class="brand-mark" aria-hidden="true">CF</span>
+          <div>
+            <p class="eyebrow">Arcade sprint</p>
+            <h1 id="game-title">Star Sprinter</h1>
+          </div>
+        </div>
+
+        <div class="score-grid" aria-live="polite">
+          <div>
+            <span>Score</span>
+            <strong id="score">0</strong>
+          </div>
+          <div>
+            <span>Best</span>
+            <strong id="bestScore">0</strong>
+          </div>
+          <div>
+            <span>Boost</span>
+            <strong id="boostMeter">100%</strong>
+          </div>
+        </div>
+
+        <div class="control-row" aria-label="Game actions">
+          <button class="icon-button primary" type="button" id="startButton" title="Start game" aria-label="Start game">
+            <span aria-hidden="true">▶</span>
+          </button>
+          <button class="icon-button" type="button" id="pauseButton" title="Pause game" aria-label="Pause game">
+            <span aria-hidden="true">Ⅱ</span>
+          </button>
+          <button class="icon-button" type="button" id="restartButton" title="Restart game" aria-label="Restart game">
+            <span aria-hidden="true">↻</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="playfield-wrap" aria-label="Star Sprinter game area">
+        <canvas id="gameCanvas" width="960" height="540" aria-label="Star Sprinter canvas"></canvas>
+        <div class="overlay is-visible" id="messageOverlay">
+          <p class="eyebrow" id="messageKicker">Ready</p>
+          <h2 id="messageTitle">Thread the asteroid lanes</h2>
+          <p id="messageBody">Move with arrow keys or WASD. Hold Space for boost. Grab stars, dodge mines, and keep the sprint alive.</p>
+        </div>
+      </section>
+
+      <section class="status-panel" aria-label="Run status">
+        <div class="mission-card">
+          <span class="status-light" id="statusLight" aria-hidden="true"></span>
+          <div>
+            <p class="eyebrow">Current run</p>
+            <strong id="runState">Waiting at launch</strong>
+          </div>
+        </div>
+        <div class="tip-strip" aria-label="Control hints">
+          <span>Move: WASD</span>
+          <span>Boost: Space</span>
+          <span>Pause: P</span>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js?v=0b0d9e9"></script>
+  </body>
+</html>
