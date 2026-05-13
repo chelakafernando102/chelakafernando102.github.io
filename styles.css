@@ -286,6 +286,17 @@ p {
   color: var(--ink);
 }
 
+.button-game {
+  background: #1d1d1f;
+  border-color: #1d1d1f;
+  color: #fff;
+}
+
+.button-game:hover {
+  background: #2f8f46;
+  border-color: #2f8f46;
+}
+
 .command-center {
   position: relative;
   padding: 18px;
