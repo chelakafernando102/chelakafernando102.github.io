@@ -14,7 +14,7 @@ if (year) {
 
 if (printButton) {
   printButton.addEventListener("click", () => {
-    window.print();
+    window.open("Chelaka%20Fernando%20Resume.pdf", "_blank");
   });
 }
 
