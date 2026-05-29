@@ -54,14 +54,30 @@
       </nav>
 
       <button>
-     <a
-  class="nav-action"
+<a
+  id="resumeBtn"
   href="https://chelakafernando102.github.io/Chelaka%20Fernando%20Resume.pdf"
   target="_blank"
-  rel="noopener noreferrer"
-     >
- PDF Resume
-     </a>
+  style="
+    background:#2563eb;
+    color:white;
+    padding:10px 16px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:600;
+  "
+>
+  PDF Resume
+</a>
+
+<script>
+const colors = ['#2563eb','#16a34a','#f59e0b','#9333ea','#dc2626'];
+let i = 0;
+setInterval(() => {
+  document.getElementById('resumeBtn').style.background = colors[i];
+  i = (i + 1) % colors.length;
+}, 1000);
+</script>
     </button>
 
     </header>
