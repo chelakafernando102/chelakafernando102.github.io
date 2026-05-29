@@ -12,11 +12,6 @@ if (year) {
   year.textContent = new Date().getFullYear();
 }
 
-if (printButton) {
-  printButton.addEventListener("click", () => {
-    window.open("Chelaka%20Fernando%20Resume.pdf", "_blank");
-  });
-}
 
 if (copyEmailButton && copyStatus) {
   copyEmailButton.addEventListener("click", async () => {
