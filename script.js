@@ -1,5 +1,4 @@
 const year = document.querySelector("#year");
-const printButton = document.querySelector("#printResume");
 const copyEmailButton = document.querySelector("#copyEmail");
 const copyStatus = document.querySelector("#copyStatus");
 const scrollMeter = document.querySelector("#scrollMeter");
