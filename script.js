@@ -38,6 +38,7 @@ if (resumeButton && !window.matchMedia("(prefers-reduced-motion: reduce)").match
 const updateScrollState = () => {
   const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
   const progress = maxScroll > 0 ? window.scrollY / maxScroll : 0;
+  const activationLine = Math.min(window.innerHeight * 0.42, 360);
 
   if (scrollMeter) {
     scrollMeter.style.width = `${Math.min(progress * 100, 100)}%`;
@@ -48,7 +49,7 @@ const updateScrollState = () => {
   for (const section of sections) {
     const rect = section.getBoundingClientRect();
 
-    if (rect.top <= 132) {
+    if (rect.top <= activationLine) {
       activeSection = section;
     }
   }
