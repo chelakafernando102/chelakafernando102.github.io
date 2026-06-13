@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Digital resume for Sachin Chelaka Fernando: business analysis, operations, KPI reporting, analytics dashboards, logistics flow, CRM, Excel, SQL, and Power BI."
+      content="A premium personal portfolio for Sachin Chelaka Fernando, blending operations analytics, business analysis, KPI reporting, interactive development, and the human edge behind the work."
     />
-    <meta name="theme-color" content="#f5f5f7" />
-    <title>Sachin Chelaka Fernando | Digital Resume Dashboard</title>
+    <meta name="theme-color" content="#090d0c" />
+    <title>Sachin Chelaka Fernando | Operations Intelligence Portfolio</title>
+    <link rel="preload" as="image" href="assets/chelaka-atelier.png" />
     <link rel="stylesheet" href="styles.css" />
     <script type="application/ld+json">
       {
@@ -22,7 +23,7 @@
           "https://www.linkedin.com/in/chelaka-fernando",
           "https://github.com/chelakafernando102"
         ],
-        "jobTitle": "Business Analyst | Operations Analyst",
+        "jobTitle": "Operations Analyst and Business Analyst",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Charlottetown",
@@ -41,149 +42,129 @@
 
     <header class="global-nav">
       <a class="brand" href="#top" aria-label="Sachin Chelaka Fernando home">
-        <span class="brand-mark">C F</span>
-        <span>Sachin Chelaka Fernando</span>
+        <span class="brand-mark">CF</span>
+        <span>Chelaka Fernando</span>
       </a>
 
-      <nav class="nav-links" aria-label="Resume sections">
-        <a href="#scorecard">Scorecard</a>
-        <a href="#experience">Experience</a>
+      <nav class="nav-links" aria-label="Portfolio sections">
+        <a href="#signature">Signature</a>
+        <a href="#proof">Proof</a>
+        <a href="#work">Work</a>
         <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
       </nav>
 
-      <button>
-<a
-  id="resumeBtn"
-  href="https://chelakafernando102.github.io/Chelaka%20Fernando%20Resume.pdf"
-  target="_blank"
-  style="
-    background:#2563eb;
-    color:white;
-    padding:10px 16px;
-    border-radius:8px;
-    text-decoration:none;
-    font-weight:600;
-  "
->
-  PDF Resume
-</a>
-
-<script>
-const colors = ['#2563eb','#16a34a','#f59e0b','#9333ea','#dc2626'];
-let i = 0;
-setInterval(() => {
-  document.getElementById('resumeBtn').style.background = colors[i];
-  i = (i + 1) % colors.length;
-}, 800);
-</script>
-    </button>
-
+      <a
+        class="nav-resume"
+        id="resumeBtn"
+        href="Chelaka%20Fernando%20Resume.pdf"
+        target="_blank"
+        rel="noreferrer"
+      >
+        PDF
+      </a>
     </header>
 
     <main id="top">
-      <section class="hero-shell" aria-labelledby="hero-title">
-        <div class="hero-copy">
-          <p class="eyebrow">Operations analytics | Business analysis | KPI reporting</p>
+      <section class="hero" aria-labelledby="hero-title">
+        <img
+          class="hero-image"
+          src="assets/chelaka-atelier.png"
+          alt="A luxury analytics workspace with polished stone, brass details, and abstract dashboard screens."
+        />
+        <div class="hero-shade" aria-hidden="true"></div>
+
+        <div class="hero-inner">
+          <p class="eyebrow">Operations intelligence | data-led execution | interactive systems</p>
           <h1 id="hero-title">Sachin Chelaka Fernando</h1>
           <p class="hero-lede">
-            A Computer Science graduate translating high-volume operations into clear
-            reporting, sharper workflows, and business decisions leaders can act on.
+            I turn busy operations into calm, visible systems. Retail flow,
+            customer pressure, dashboards, and code all meet in the same place:
+            better decisions with a little more elegance.
           </p>
 
-          <div class="availability-strip" aria-label="Candidate snapshot">
-            <span>Charlottetown, PEI</span>
-            <span>Computer Science Graduate</span>
-            <span>Open to analyst and operations roles</span>
+          <div class="hero-actions" aria-label="Primary links">
+            <a class="button button-primary" href="mailto:chelakafernando102@gmail.com">Start a conversation</a>
+            <a class="button button-ghost" href="Chelaka%20Fernando%20Resume.pdf" target="_blank" rel="noreferrer">Open PDF</a>
+            <a class="button button-ghost" href="https://www.linkedin.com/in/chelaka-fernando" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="button button-ghost" href="https://github.com/chelakafernando102" target="_blank" rel="noreferrer">GitHub</a>
           </div>
 
-          <div class="hero-actions" aria-label="Primary resume links">
-            <a class="button button-primary" href="mailto:chelakafernando102@gmail.com">Email me</a>
-            <a class="button button-game" href="https://chelakafernando102.github.io/star-sprinter/" target="_blank" rel="noreferrer">Getting bored with details ?</a>
-            <a class="button button-secondary" href="https://www.linkedin.com/in/chelaka-fernando" target="_blank" rel="noreferrer">LinkedIn</a>
-            <a class="button button-secondary" href="https://github.com/chelakafernando102" target="_blank" rel="noreferrer">GitHub</a>
+          <div class="hero-meta" aria-label="Candidate snapshot">
+            <span>Charlottetown, PEI</span>
+            <span>Computer Science Graduate</span>
+            <span>Open to analyst, operations, logistics, and financial roles</span>
           </div>
         </div>
 
-        <aside class="command-center" aria-label="Resume KPI command center">
-          <div class="device-bar">
-            <div>
-              <span class="panel-kicker">Candidate OS</span>
-              <strong>Operations Command Center</strong>
-            </div>
-            <span class="live-dot">Ready</span>
+        <div class="hero-proof" aria-label="Impact snapshot">
+          <div>
+            <strong>2,500+</strong>
+            <span>units handled per shift</span>
           </div>
-
-          <div class="signal-grid">
-            <div class="signal-card signal-primary">
-              <span class="metric-label">Inventory Accuracy</span>
-              <strong>95%+</strong>
-              <p>Excel, reconciliation, internal systems</p>
-            </div>
-            <div class="signal-card">
-              <span class="metric-label">Units per Shift</span>
-              <strong>2,500+</strong>
-              <p>Receiving, sorting, replenishment</p>
-            </div>
-            <div class="signal-card">
-              <span class="metric-label">Resolution Rate</span>
-              <strong>85%+</strong>
-              <p>CRM-backed support patterns</p>
-            </div>
-            <div class="signal-card">
-              <span class="metric-label">Handling Time Gain</span>
-              <strong>25%+</strong>
-              <p>Faster service throughput</p>
-            </div>
+          <div>
+            <strong>95%+</strong>
+            <span>inventory accuracy</span>
           </div>
-
-          <div class="ops-visual" aria-hidden="true">
-            <div class="chart-row">
-              <span style="--height: 42%; --color: var(--accent-blue)"></span>
-              <span style="--height: 68%; --color: var(--accent-green)"></span>
-              <span style="--height: 54%; --color: var(--accent-orange)"></span>
-              <span style="--height: 86%; --color: var(--accent-indigo)"></span>
-              <span style="--height: 72%; --color: var(--accent-red)"></span>
-            </div>
-            <div class="flow-row">
-              <span>Receive</span>
-              <i></i>
-              <span>Validate</span>
-              <i></i>
-              <span>Replenish</span>
-              <i></i>
-              <span>Report</span>
-            </div>
+          <div>
+            <strong>85%+</strong>
+            <span>support resolution rate</span>
           </div>
-        </aside>
+          <a href="star-sprinter/" target="_blank" rel="noreferrer">
+            Getting bored with details? Play the game I built.
+          </a>
+        </div>
       </section>
 
-      <section class="section-band compact-band" id="scorecard" aria-labelledby="scorecard-title">
-        <div class="section-inner">
+      <section class="section intro-section" id="signature" aria-labelledby="signature-title">
+        <div class="section-inner intro-grid">
           <div class="section-heading">
-            <p class="eyebrow">Executive Scorecard</p>
-            <h2 id="scorecard-title">Built for the point where business, logistics, and data meet.</h2>
+            <p class="eyebrow">The me factor</p>
+            <h2 id="signature-title">Polish matters, but only after the work becomes real.</h2>
           </div>
 
-          <div class="kpi-board">
+          <div class="intro-copy">
+            <p class="lead">
+              My strongest lane is the space between the floor and the dashboard.
+              I have handled high-volume operations, supported customers under
+              pressure, built analytics projects, and written interactive systems
+              because I like seeing how the whole machine moves.
+            </p>
+            <p>
+              This site is not trying to look like a traditional resume. It is a
+              sharper version of how I work: clear signals, measured results, a
+              taste for good interfaces, and enough personality to make the
+              details worth reading.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section proof-section" id="proof" aria-labelledby="proof-title">
+        <div class="section-inner">
+          <div class="section-heading wide-heading">
+            <p class="eyebrow">Proof of work</p>
+            <h2 id="proof-title">Numbers from real operating environments, presented like an executive brief.</h2>
+          </div>
+
+          <div class="proof-grid">
             <article>
-              <span class="metric-label">Operational Volume</span>
+              <span>Operational volume</span>
               <strong>2,500+</strong>
               <p>Units handled per shift across receiving, sorting, backroom organization, and replenishment.</p>
             </article>
             <article>
-              <span class="metric-label">Stock Reliability</span>
+              <span>Stock reliability</span>
               <strong>95%+</strong>
-              <p>Inventory accuracy maintained through tracking, reconciliation, Excel, and internal tools.</p>
+              <p>Inventory accuracy maintained through stock tracking, reconciliation, Excel, and internal systems.</p>
             </article>
             <article>
-              <span class="metric-label">Service Quality</span>
+              <span>Service quality</span>
               <strong>85%+</strong>
-              <p>Resolution rate for high-volume Rogers and Fido support calls using CRM systems.</p>
+              <p>Resolution rate across high-volume Rogers and Fido customer support calls.</p>
             </article>
             <article>
-              <span class="metric-label">Throughput Lift</span>
+              <span>Throughput lift</span>
               <strong>25%+</strong>
               <p>Average call handling time reduction through faster diagnosis and structured resolution.</p>
             </article>
@@ -191,173 +172,137 @@ setInterval(() => {
         </div>
       </section>
 
-      <section class="section" aria-labelledby="profile-title">
-        <div class="section-inner profile-grid">
-          <div class="section-heading sticky-copy">
-            <p class="eyebrow">Analyst Narrative</p>
-            <h2 id="profile-title">Close enough to the work to improve it. Technical enough to measure it.</h2>
-          </div>
-
-          <div class="narrative-stack">
-            <p class="lead">
-              My background combines retail operations, customer support, administration,
-              analytics-focused projects, and a Computer Science degree. I am strongest
-              when a business process needs structure: clean data, visible KPIs, reduced
-              friction, and decisions that connect daily execution to measurable outcomes.
-            </p>
-
-            <div class="capability-rail" aria-label="Core analyst capabilities">
-              <span>Excel</span>
-              <span>SQL</span>
-              <span>Power BI</span>
-              <span>CRM</span>
-              <span>Dashboards</span>
-              <span>Process Improvement</span>
-              <span>Inventory Flow</span>
-              <span>Customer Operations</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section dark-section" aria-labelledby="operating-model-title">
-        <div class="section-inner operating-grid">
+      <section class="section method-section" aria-labelledby="method-title">
+        <div class="section-inner method-grid">
           <div class="section-heading">
-            <p class="eyebrow">Operating Model</p>
-            <h2 id="operating-model-title">A resume translated into a business control loop.</h2>
+            <p class="eyebrow">Operating signature</p>
+            <h2 id="method-title">The pattern is simple: get close, structure the signal, improve the flow.</h2>
           </div>
 
-          <div class="control-loop" aria-label="Business control loop">
+          <div class="method-list" aria-label="Operating method">
             <article>
               <span>01</span>
-              <h3>Capture</h3>
-              <p>Frontline signals from inventory, calls, customer issues, vendor coordination, and daily workload.</p>
+              <h3>Get close to the work</h3>
+              <p>Frontline details from stockrooms, support calls, administration, and live user behavior matter.</p>
             </article>
             <article>
               <span>02</span>
-              <h3>Structure</h3>
-              <p>Organize work into systems: CRM entries, Excel tracking, reconciliation, documented routines.</p>
+              <h3>Turn friction into structure</h3>
+              <p>CRM entries, Excel tracking, inventory routines, and documented workflows make the pressure visible.</p>
             </article>
             <article>
               <span>03</span>
-              <h3>Analyze</h3>
-              <p>Find patterns in operational bottlenecks, delays, recurring issues, and service-level pressure.</p>
-            </article>
-            <article>
-              <span>04</span>
-              <h3>Improve</h3>
-              <p>Refine workflows, improve throughput, support availability, and make performance easier to see.</p>
+              <h3>Make the system easier to read</h3>
+              <p>Dashboards, interfaces, and crisp reporting help teams see what is working and what needs attention.</p>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section" id="experience" aria-labelledby="experience-title">
+      <section class="section work-section" id="work" aria-labelledby="work-title">
         <div class="section-inner">
-          <div class="section-heading">
+          <div class="section-heading wide-heading">
             <p class="eyebrow">Experience</p>
-            <h2 id="experience-title">Operational impact, mapped by signal and result.</h2>
+            <h2 id="work-title">A career built from operational trust, customer pressure, and technical curiosity.</h2>
           </div>
 
           <div class="timeline">
             <article class="timeline-item">
               <div class="timeline-meta">
-                <span class="role-type">Operations</span>
+                <span>Operations</span>
                 <h3>Operations Associate, Stock &amp; Merchandising</h3>
                 <p>Walmart | Sault Ste. Marie, ON</p>
                 <time datetime="2023-12">Dec 2023 - Apr 2026</time>
               </div>
               <div class="timeline-body">
-                <div class="mini-metrics" aria-label="Walmart KPI highlights">
+                <p>
+                  Managed receiving and backroom operations across unloading,
+                  sorting, organization, replenishment, merchandising, customer
+                  support, and stock reconciliation.
+                </p>
+                <div class="detail-tags" aria-label="Walmart highlights">
                   <span>2,500+ units per shift</span>
                   <span>95%+ inventory accuracy</span>
-                  <span>Reduced stocking delays</span>
+                  <span>reduced stocking delays</span>
+                  <span>earned management trust</span>
                 </div>
-                <ul>
-                  <li>Managed receiving and backroom operations across unloading, sorting, organization, and replenishment.</li>
-                  <li>Reorganized backroom inventory flow and unloading processes to reduce delays during high-volume shifts.</li>
-                  <li>Coordinated merchandising and stock replenishment to support product availability and company standards.</li>
-                  <li>Maintained inventory accuracy through stock tracking, reconciliation, Excel, and internal systems.</li>
-                  <li>Took ownership of critical operations beyond core responsibilities and earned management trust.</li>
-                </ul>
               </div>
             </article>
 
             <article class="timeline-item">
               <div class="timeline-meta">
-                <span class="role-type">Customer Ops</span>
+                <span>Customer operations</span>
                 <h3>Customer Service Agent</h3>
                 <p>IO Solutions | Charlottetown, PE</p>
                 <time datetime="2023-05">May 2023 - Aug 2023</time>
               </div>
               <div class="timeline-body">
-                <div class="mini-metrics" aria-label="IO Solutions KPI highlights">
+                <p>
+                  Handled high-volume Rogers and Fido support calls with fast,
+                  accurate, empathetic resolution while using CRM data to track
+                  interactions, patterns, and escalations.
+                </p>
+                <div class="detail-tags" aria-label="IO Solutions highlights">
                   <span>85%+ resolution rate</span>
                   <span>25%+ faster handling</span>
                   <span>CRM pattern tracking</span>
+                  <span>service-level support</span>
                 </div>
-                <ul>
-                  <li>Handled high-volume Rogers and Fido support calls with fast, accurate, empathetic issue resolution.</li>
-                  <li>Reduced average call handling time by more than 25%, improving service throughput.</li>
-                  <li>Used CRM systems to track interactions, identify recurring patterns, and support data-driven decisions.</li>
-                  <li>Collaborated cross-functionally to resolve escalations and improve service-level performance.</li>
-                </ul>
               </div>
             </article>
 
             <article class="timeline-item">
               <div class="timeline-meta">
-                <span class="role-type">Administration</span>
+                <span>Administration</span>
                 <h3>Administrative Assistant</h3>
                 <p>Beliyo Fashions | Mahabage, Sri Lanka</p>
                 <time datetime="2020-10">Oct 2020 - Dec 2022</time>
               </div>
               <div class="timeline-body">
-                <ul>
-                  <li>Supported business administration and daily operations, including inventory coordination and vendor communication.</li>
-                  <li>Improved administrative workflows through structured organization and process refinement.</li>
-                  <li>Assisted with reporting and basic data analysis to improve operational visibility.</li>
-                  <li>Managed client interactions and supported timely issue resolution.</li>
-                </ul>
+                <p>
+                  Supported business administration, inventory coordination,
+                  vendor communication, client interactions, workflow improvement,
+                  reporting, and basic data analysis.
+                </p>
               </div>
             </article>
 
             <article class="timeline-item">
               <div class="timeline-meta">
-                <span class="role-type">Leadership</span>
+                <span>Leadership</span>
                 <h3>Volunteer Tutor</h3>
                 <p>Sri Lanka</p>
                 <time datetime="2021-04">Apr 2021 - Sep 2022</time>
               </div>
               <div class="timeline-body">
-                <ul>
-                  <li>Mentored students through structured academic support across multiple learning styles.</li>
-                  <li>Applied problem-solving methods to simplify complex concepts and improve learning consistency.</li>
-                  <li>Strengthened leadership, communication, and coaching skills while managing multiple students.</li>
-                </ul>
+                <p>
+                  Mentored students through structured academic support, simplifying
+                  complex concepts and strengthening communication, coaching, and
+                  leadership across multiple learning styles.
+                </p>
               </div>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section surface-section" id="projects" aria-labelledby="projects-title">
+      <section class="section projects-section" id="projects" aria-labelledby="projects-title">
         <div class="section-inner">
           <div class="section-heading wide-heading">
-            <p class="eyebrow">Project Portfolio</p>
-            <h2 id="projects-title">Business analysis projects with a technical edge.</h2>
+            <p class="eyebrow">Project atelier</p>
+            <h2 id="projects-title">Analytics, web systems, AI, and one game because curiosity should show up.</h2>
           </div>
 
           <div class="project-grid">
             <article class="project-card featured-project">
               <div class="project-visual analytics-visual" aria-hidden="true">
-                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span>
               </div>
               <div class="project-content">
-                <span class="project-tag">Dashboard Analytics | KPI Reporting</span>
+                <span class="project-tag">Dashboard analytics | KPI reporting</span>
                 <h3>Retail Operations Intelligence Dashboard</h3>
                 <p>
-                  Sales, inventory, and operational performance dashboard designed around KPI
+                  A sales, inventory, and performance dashboard built around KPI
                   visibility, reporting clarity, and retail decision support.
                 </p>
                 <a href="https://chelakafernando102.github.io/retail-operations-intelligence-dashboard/" target="_blank" rel="noreferrer">View live project</a>
@@ -369,9 +314,12 @@ setInterval(() => {
                 <span></span><span></span><span></span>
               </div>
               <div class="project-content">
-                <span class="project-tag">Web Systems | Interaction Design</span>
+                <span class="project-tag">Web systems | interaction design</span>
                 <h3>Interactive 3D Web Environments</h3>
-                <p>Responsive browser experiences built with HTML, CSS, JavaScript, Three.js, and Blender.</p>
+                <p>
+                  Responsive browser experiences built with HTML, CSS,
+                  JavaScript, Three.js, and Blender.
+                </p>
                 <a href="https://codepen.io/Chelaka-Fernando/pen/qEEjLzG" target="_blank" rel="noreferrer">View live project</a>
               </div>
             </article>
@@ -381,42 +329,56 @@ setInterval(() => {
                 <span></span><span></span><span></span><span></span>
               </div>
               <div class="project-content">
-                <span class="project-tag">AI | Process Support</span>
+                <span class="project-tag">AI | process support</span>
                 <h3>AI Chatbot for Algoma University</h3>
-                <p>AI application using Python, Java, C++, and Google Gemini API with focus on logic and optimization.</p>
+                <p>
+                  An AI application using Python, Java, C++, and Google Gemini
+                  API with attention to logic, optimization, and user support.
+                </p>
                 <a href="https://ai-chatbot-for-algoma-university.onrender.com" target="_blank" rel="noreferrer">View live project</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-visual game-visual" aria-hidden="true">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="project-content">
+                <span class="project-tag">After-hours craft | game design</span>
+                <h3>Star Sprinter</h3>
+                <p>
+                  A fast browser game that adds a playful signature to the site
+                  and shows the interactive side behind the analyst profile.
+                </p>
+                <a href="star-sprinter/" target="_blank" rel="noreferrer">Play the game</a>
               </div>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section" id="skills" aria-labelledby="skills-title">
-        <div class="section-inner split-layout">
-          <div class="section-heading sticky-copy">
-            <p class="eyebrow">Capability Matrix</p>
-            <h2 id="skills-title">Tools and strengths mapped to business outcomes.</h2>
+      <section class="section capability-section" id="capabilities" aria-labelledby="capabilities-title">
+        <div class="section-inner capability-grid">
+          <div class="section-heading">
+            <p class="eyebrow">Capability suite</p>
+            <h2 id="capabilities-title">Tools are only useful when they make the business easier to steer.</h2>
           </div>
 
-          <div class="skill-matrix">
+          <div class="capability-list">
             <article>
-              <span class="skill-index">Data</span>
-              <h3>Reporting &amp; Analytics</h3>
-              <p>Excel, SQL, Power BI, CRM, KPI reporting, dashboard analytics, data visualization.</p>
+              <h3>Reporting &amp; analytics</h3>
+              <p>Excel, SQL, Power BI, CRM, KPI reporting, dashboard analytics, and data visualization.</p>
             </article>
             <article>
-              <span class="skill-index">Ops</span>
-              <h3>Operations Analysis</h3>
-              <p>Inventory coordination, process improvement, business administration, team support, customer service.</p>
+              <h3>Operations analysis</h3>
+              <p>Inventory coordination, process improvement, business administration, team support, and customer service.</p>
             </article>
             <article>
-              <span class="skill-index">Tech</span>
-              <h3>Technical Delivery</h3>
-              <p>HTML, CSS, JavaScript, Three.js, Blender, Python, Java, C++, Google Gemini API.</p>
+              <h3>Technical delivery</h3>
+              <p>HTML, CSS, JavaScript, Three.js, Blender, Python, Java, C++, and Google Gemini API.</p>
             </article>
             <article>
-              <span class="skill-index">Finance</span>
-              <h3>Business Judgment</h3>
+              <h3>Business judgment</h3>
               <p>Operational reporting, service throughput, resource planning, logistics flow, and performance review.</p>
             </article>
           </div>
@@ -424,10 +386,10 @@ setInterval(() => {
       </section>
 
       <section class="section education-section" aria-labelledby="education-title">
-        <div class="section-inner split-layout">
+        <div class="section-inner education-grid">
           <div class="section-heading">
             <p class="eyebrow">Education</p>
-            <h2 id="education-title">Computer science foundation with business and IT training.</h2>
+            <h2 id="education-title">Computer science foundation, shaped by business and IT training.</h2>
           </div>
 
           <div class="education-list">
@@ -445,23 +407,23 @@ setInterval(() => {
         </div>
       </section>
 
-      <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <section class="section contact-section" id="contact" aria-labelledby="contact-title">
         <div class="section-inner contact-grid">
-          <div>
+          <div class="section-heading">
             <p class="eyebrow">Contact</p>
-            <h2 id="contact-title">Ready for analyst, operations, business, financial, and logistics-focused roles.</h2>
+            <h2 id="contact-title">Bring me into the room when operations need evidence, taste, and momentum.</h2>
             <p>
               Based in Charlottetown, PEI. Open to opportunities where reporting,
-              operations, and digital tools meet.
+              operations, logistics, finance, and digital tools meet.
             </p>
           </div>
 
-          <div class="contact-panel">
+          <div class="contact-panel" aria-label="Contact links">
             <a href="mailto:chelakafernando102@gmail.com">chelakafernando102@gmail.com</a>
             <a href="tel:+12495257880">+1 (249) 525 7880</a>
-            <a href="https://github.com/chelakafernando102" target="_blank" rel="noreferrer">GitHub Portfolio</a>
             <a href="https://www.linkedin.com/in/chelaka-fernando" target="_blank" rel="noreferrer">LinkedIn Profile</a>
-            <a href="https://chelakafernando102.github.io/Chelaka%20Fernando%20Resume.pdf" target="_blank" rel="noreferrer"> Traditional PDF Resume </a>
+            <a href="https://github.com/chelakafernando102" target="_blank" rel="noreferrer">GitHub Portfolio</a>
+            <a href="Chelaka%20Fernando%20Resume.pdf" target="_blank" rel="noreferrer">Traditional PDF Resume</a>
             <button type="button" id="copyEmail">Copy email</button>
             <p class="copy-status" id="copyStatus" role="status" aria-live="polite"></p>
           </div>
@@ -470,7 +432,7 @@ setInterval(() => {
     </main>
 
     <footer class="site-footer">
-      <p>&copy; <span id="year"></span> Sachin Chelaka Fernando. Digital resume dashboard.</p>
+      <p>&copy; <span id="year"></span> Sachin Chelaka Fernando. Built with precision and a little nerve.</p>
       <a href="#top">Back to top</a>
     </footer>
 
